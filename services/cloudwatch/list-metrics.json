@@ -1,0 +1,174 @@
+{
+    "Metrics": [
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "StatusCheckFailed",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "DiskWriteOps",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "DiskReadOps",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "DiskWriteBytes",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "StatusCheckFailed_System",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "CPUCreditUsage",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "CPUCreditBalance",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "NetworkOut",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "StatusCheckFailed_Instance",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "NetworkPacketsOut",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "CPUSurplusCreditsCharged",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "CPUSurplusCreditBalance",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "CPUUtilization",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "DiskReadBytes",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "MetadataNoToken",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "NetworkPacketsIn",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        },
+        {
+            "Namespace": "AWS/EC2",
+            "MetricName": "NetworkIn",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-0fb16c73513fac0e6"
+                }
+            ]
+        }
+    ]
+}
