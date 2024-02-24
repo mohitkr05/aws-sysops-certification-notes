@@ -1,0 +1,13 @@
+# Ignore Terraform files
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfplan
+
+# Ignore local configuration files
+terraform.rc
+terraform.tfvars
+*.tfvars
+
+# Ignore CLI configuration files
+.terraform-version

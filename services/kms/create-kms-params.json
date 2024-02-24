@@ -1,0 +1,10 @@
+[
+  {
+    "ParameterKey": "KeyAlias",
+    "ParameterValue": "MyKMSKeyAlias"
+  },
+  {
+    "ParameterKey": "KeyDescription",
+    "ParameterValue": "MyKMSKeyDescription"
+  }
+]
