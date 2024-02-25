@@ -1,0 +1,35 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  BackupVaultName:
+    Type: String
+    Description: 'Name of the AWS Backup Vault'
+    Default: 'MyBackupVault'
+  BackupPlanName:
+    Type: String
+    Description: 'Name of the AWS Backup Plan'
+    Default: 'MyBackupPlan'
+  ScheduleExpression:
+    Type: String
+    Description: 'Backup schedule expression'
+    Default: 'cron(0 12 * * ? *)' # Daily at 12:00 PM UTC
+
+Resources:
+  MyBackupVault:
+    Type: 'AWS::Backup::BackupVault'
+    Properties:
+      BackupVaultName: !Ref BackupVaultName
+      EncryptionKeyArn: 'arn:aws:kms:region:account-id:key/key-id'
+
+  MyBackupPlan:
+    Type: 'AWS::Backup::BackupPlan'
+    Properties:
+      BackupPlan:
+        BackupPlanName: !Ref BackupPlanName
+        Rules:
+          - RuleName: 'DailyBackupRule'
+            TargetBackupVault: !Ref BackupVaultName
+            ScheduleExpression: !Ref ScheduleExpression
+            StartWindowMinutes: 60
+            CompletionWindowMinutes: 120
+            Lifecycle:
+              DeleteAfterDays: 30

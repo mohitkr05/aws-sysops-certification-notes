@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  KeyAlias:
+    Type: String
+    Description: 'Alias for the KMS key'
+    Default: 'MyKMSKeyAlias'
+  KeyDescription:
+    Type: String
+    Description: 'Description for the KMS key'
+    Default: 'MyKMSKeyDescription'
+
+Resources:
+  MyKMSKey:
+    Type: 'AWS::KMS::Key'
+    Properties:
+      Description: !Ref KeyDescription
+      KeyPolicy:
+        Version: '2012-10-17'
+        Id: 'key-default-1'
+        Statement:
+          - Effect: Allow
+            Principal:
+              AWS: '*'
+            Action: 'kms:*'
+            Resource: '*'
+
+  MyKMSKeyAlias:
+    Type: 'AWS::KMS::Alias'
+    Properties:
+      AliasName: !Sub 'alias/${KeyAlias}'
+      TargetKeyId: !Ref MyKMSKey
