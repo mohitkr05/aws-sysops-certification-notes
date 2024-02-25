@@ -44,3 +44,8 @@ Region:`ap-southeast-2`
  ```
 
 ![alt text](image.png)
+
+2. Create a KMS Key with Terraform 
+ - Use the [template](create-kms.tf)
+ - use `terraform validate`
+ - use `terraform apply`
